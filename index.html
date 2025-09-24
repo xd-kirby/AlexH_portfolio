@@ -24,7 +24,7 @@
   <body>
     <!-- Top -->
     <header>
-      <h1><a href="#">Welcome to my portfolio!</a></h1>
+      <h1>Welcome to my portfolio!</h1>
       <nav>
         <a href="#home">Home</a>
         <a href="#about">About me</a>
@@ -38,18 +38,22 @@
         <h2>Introduction</h2>
         <p>Hello! My name is Alex. I am a junior web developer!</p>
         <p>This is my first attempt at a portfolio site. More coming soon!</p>
+        <img src="assets/images/Silverhand.jpg" alt="Image of Johnny Silverhand">
+        <p>placeholder image</p>
+        
       </section>
       <section id="about">
         <h2>About me</h2>
         <p>
-          My name is Alexandru and i am a soon to become web dveloper who is currently studying at NTI Gymnasiet. 
+          My name is Alex and i am a soon to become web developer who is
+          currently studying at NTI Gymnasiet.
         </p>
         <h2>Here is a pictures of my dumb dog</h2>
         <img
           src="assets/images/fefe.jpg"
           alt="Picture of a bichon maltese in a blue raincoat"
-          height="500"
-          width="350"
+          height="350"
+          width="250"
         />
         <p>My favorite song</p>
         <audio controls>
@@ -74,6 +78,33 @@
       </section>
       <section id="contact">
         <h2>My contact info</h2>
+
+        <form action="#">
+          <fieldset>
+            <legend>Personal informattion</legend>
+            <label for="name">Full name :</label>
+            <input type="text" id="name" placeholder="Your name..." required />
+            <label for="Email">Your Email : </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email..."
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <p>Write your message:</p>
+            <label for="message"></label>
+            <textarea
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="Write here..."
+            ></textarea>
+          </fieldset>
+          <button type="submit" name="send">Send</button>
+        </form>
       </section>
     </main>
     <!-- Bottom -->
